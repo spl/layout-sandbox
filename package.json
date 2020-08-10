@@ -1,0 +1,15 @@
+{
+  "name": "layout-sandbox",
+  "version": "0.0.1",
+  "description": "Experimenting with HTML and CSS layout",
+  "repository": "stoicism-compendium/stoicism-compendium",
+  "private": true,
+  "author": "Sean Leather (https://github.com/spl)",
+  "license": "ISC",
+  "devDependencies": {
+    "js-beautify": "^1.11.0"
+  },
+  "scripts": {
+    "format": "js-beautify --type html --replace -f index.html"
+  }
+}
