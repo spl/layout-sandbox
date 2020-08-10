@@ -1,8 +1,11 @@
 # Layout Sandbox
 
-The file `index.html` contains an experiment in layout using HTML and CSS.
+The files `index-*.html` contain layout experiments using HTML and CSS.
 
-[**Render `index.html`.**][index.html]
+Render:
+
+* [index-1.html](http://htmlpreview.github.io/?https://github.com/spl/layout-sandbox/blob/main/index-1.html)
+* [index-2.html](http://htmlpreview.github.io/?https://github.com/spl/layout-sandbox/blob/main/index-2.html)
 
 ## Development
 
@@ -12,5 +15,3 @@ The file `index.html` contains an experiment in layout using HTML and CSS.
 4. Change `index.html`.
 5. Format HTML with `npm run format` or `yarn format`.
 6. Refresh browser.
-
-[index.html]: http://htmlpreview.github.io/?https://github.com/spl/layout-sandbox/blob/main/index.html

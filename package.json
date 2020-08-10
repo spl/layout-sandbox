@@ -10,6 +10,6 @@
     "js-beautify": "^1.11.0"
   },
   "scripts": {
-    "format": "js-beautify --type html --replace -f index.html"
+    "format": "js-beautify --type html --replace -f index-*.html"
   }
 }
