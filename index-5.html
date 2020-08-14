@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html class="bg-white antialiased js-focus-visible" lang="en">
+
+<head>
+  <link rel="stylesheet" href="tailwind.min.css">
+  <style>
+    .markdown {
+      --text-opacity: 1;
+      color: rgba(74, 85, 104, var(--text-opacity));
+      line-height: 1.625
+    }
+
+    .markdown>:first-child {
+      margin-top: 0
+    }
+
+    .markdown>h1 {
+      margin-bottom: .25rem;
+      font-weight: 500;
+      font-size: 1.875rem
+    }
+
+    .markdown>h1,
+    .markdown>h2 {
+      line-height: 1;
+      --text-opacity: 1;
+      color: rgba(26, 32, 44, var(--text-opacity));
+      letter-spacing: -.025em
+    }
+
+    .markdown>p {
+      font-size: 1rem;
+      margin-top: 1.5rem
+    }
+
+    .max-h-\(screen-16\) {
+      max-height: calc(100vh - 4rem) !important
+    }
+
+    .top-16 {
+      top: 4rem !important
+    }
+
+    .z-90 {
+      z-index: 90 !important
+    }
+
+    .z-100 {
+      z-index: 100 !important
+    }
+
+    @supports ((position:-webkit-sticky) or (position:sticky)) {
+      @media (min-width:992px) {
+        .sticky\?lg\:h-screen {
+          height: 100vh !important
+        }
+
+        .sticky\?lg\:h-\(screen-16\) {
+          height: calc(100vh - 4rem) !important
+        }
+      }
+    }
+
+    @media (min-width:576px) {
+      .sm\:inline {
+        display: inline !important
+      }
+    }
+
+    @media (min-width:992px) {
+      .lg\:pt-28 {
+        padding-top: 7rem !important
+      }
+
+      .lg\:top-16 {
+        top: 4rem !important
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="flex bg-white border-b border-gray-200 fixed top-0 inset-x-0 z-100 h-16 items-center">
+    <div class="w-full max-w-screen-xl relative mx-auto px-6">
+      <div class="flex items-center -mx-6">
+        <div class="w-1/5 text-center bg-gray-300 px-2 py-2 ml-2">logo</div>
+        <div class="w-3/5 text-center bg-gray-300 px-2 py-2 m-2">search</div>
+        <div class="w-1/5 text-center bg-gray-300 px-2 py-2 mr-2">nav</div>
+      </div>
+    </div>
+  </div>
+  <div class="w-full max-w-screen-xl mx-auto px-6">
+    <div class="lg:flex -mx-6">
+      <div class="fixed inset-0 h-full bg-white z-90 w-full border-b -mb-16 lg:mb-0 lg:static lg:h-auto lg:overflow-y-visible lg:border-b-0 lg:pt-0 lg:w-1/4 lg:block lg:border-0 xl:w-1/5 hidden pt-16">
+        <div class="h-full overflow-y-auto scrolling-touch lg:h-auto lg:block lg:relative lg:sticky lg:bg-transparent overflow-hidden lg:top-16 bg-white">
+          <nav class="px-6 pt-6 overflow-y-auto text-base lg:text-sm lg:py-12 lg:pl-6 lg:pr-8 sticky?lg:h-(screen-16)">
+            <ul class="m-4">
+              <li class="mb-4">Sidebar (left, first item)</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item</li>
+              <li class="mb-4">Item (last)</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="min-h-screen w-full lg:static lg:max-h-full lg:overflow-visible lg:w-3/4 xl:w-4/5">
+        <div class="flex">
+          <div class="w-full pt-24 lg:pt-28">
+            <div class="markdown mb-6 px-6 max-w-3xl mx-auto lg:ml-0 lg:mr-auto xl:mx-0 xl:px-12 xl:w-3/4">
+              <h1 class="flex items-center">Lorem ipsum</h1>
+              <div class="mt-0 mb-4 text-gray-600">Lorem ipsum dolor sit amet...</div>
+            </div>
+            <div class="flex">
+              <div class="markdown px-6 pb-4 xl:px-12 w-full max-w-3xl mx-auto lg:ml-0 lg:mr-auto xl:mx-0 xl:w-3/4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra justo nec ultrices dui sapien. Nullam eget felis eget nunc lobortis mattis aliquam. Orci porta non pulvinar neque laoreet. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Fringilla phasellus faucibus scelerisque eleifend. Ut sem viverra aliquet eget sit. Orci phasellus egestas tellus rutrum tellus pellentesque eu. Quis risus sed vulputate odio ut enim blandit volutpat maecenas. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget. Elit pellentesque habitant morbi tristique senectus et netus et.</p>
+                <p>At tellus at urna condimentum mattis pellentesque. Praesent elementum facilisis leo vel fringilla. Vitae congue eu consequat ac felis donec et odio pellentesque. Elementum facilisis leo vel fringilla. Adipiscing elit duis tristique sollicitudin. Porttitor massa id neque aliquam vestibulum morbi blandit. Viverra maecenas accumsan lacus vel facilisis. Enim praesent elementum facilisis leo vel fringilla. Amet venenatis urna cursus eget. Dui ut ornare lectus sit amet est placerat in egestas. Imperdiet nulla malesuada pellentesque elit eget gravida cum sociis natoque. Vestibulum mattis ullamcorper velit sed ullamcorper morbi. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna. Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Accumsan tortor posuere ac ut consequat semper viverra nam. Lacus viverra vitae congue eu consequat. Integer enim neque volutpat ac tincidunt vitae. Egestas erat imperdiet sed euismod nisi porta lorem mollis.</p>
+                <p>Dictum at tempor commodo ullamcorper a lacus. Sed euismod nisi porta lorem mollis aliquam. Ipsum consequat nisl vel pretium lectus quam id leo in. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim. Morbi tincidunt ornare massa eget egestas purus. Dui ut ornare lectus sit amet. Fermentum dui faucibus in ornare quam viverra. Sit amet tellus cras adipiscing enim eu turpis. Ipsum consequat nisl vel pretium lectus quam id leo. Blandit massa enim nec dui nunc mattis enim. Lobortis mattis aliquam faucibus purus in.</p>
+                <p>Nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. Mauris a diam maecenas sed enim ut. Consequat id porta nibh venenatis cras sed. Scelerisque viverra mauris in aliquam sem fringilla. Consequat semper viverra nam libero. Est sit amet facilisis magna. Auctor urna nunc id cursus metus aliquam eleifend mi. Cras semper auctor neque vitae. Duis at consectetur lorem donec massa sapien faucibus. Tortor condimentum lacinia quis vel eros.</p>
+                <p>Sed euismod nisi porta lorem mollis. At augue eget arcu dictum varius. Sed arcu non odio euismod lacinia at quis. Enim nunc faucibus a pellentesque sit amet. Est ante in nibh mauris. Sit amet tellus cras adipiscing enim eu turpis egestas pretium. Cursus in hac habitasse platea dictumst quisque sagittis purus sit. Eu volutpat odio facilisis mauris sit amet massa vitae. Elit pellentesque habitant morbi tristique senectus et. Cras semper auctor neque vitae tempus quam pellentesque nec. Amet consectetur adipiscing elit duis tristique sollicitudin nibh. Ipsum consequat nisl vel pretium lectus quam id leo in. Et odio pellentesque diam volutpat. Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec. Orci porta non pulvinar neque laoreet suspendisse. Fames ac turpis egestas maecenas pharetra convallis posuere morbi.</p>
+                <p>Libero justo laoreet sit amet cursus sit amet dictum sit. Posuere urna nec tincidunt praesent semper feugiat. Pulvinar neque laoreet suspendisse interdum consectetur libero. Tortor condimentum lacinia quis vel eros donec ac odio tempor. Et netus et malesuada fames ac turpis egestas. Quis blandit turpis cursus in hac habitasse platea. Vel quam elementum pulvinar etiam non. Erat pellentesque adipiscing commodo elit at imperdiet dui accumsan. Pretium lectus quam id leo in vitae turpis. Eu turpis egestas pretium aenean pharetra. Enim sit amet venenatis urna cursus. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Varius quam quisque id diam vel quam elementum pulvinar etiam. Volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nunc aliquet bibendum enim facilisis gravida neque convallis a.</p>
+                <p>A diam maecenas sed enim ut sem viverra. Pretium aenean pharetra magna ac. Vel risus commodo viverra maecenas accumsan lacus vel facilisis. Enim ut sem viverra aliquet eget sit amet tellus. Aliquet lectus proin nibh nisl condimentum id. Gravida quis blandit turpis cursus in hac habitasse platea dictumst. Egestas erat imperdiet sed euismod. Sodales ut eu sem integer vitae justo eget. Egestas fringilla phasellus faucibus scelerisque eleifend donec. Mi bibendum neque egestas congue quisque egestas diam in. Sed turpis tincidunt id aliquet risus. Tellus in metus vulputate eu scelerisque. In ante metus dictum at tempor. Quis viverra nibh cras pulvinar mattis nunc sed blandit. Non arcu risus quis varius. Elit pellentesque habitant morbi tristique senectus et netus et.</p>
+                <p>In ornare quam viverra orci sagittis eu volutpat odio facilisis. Arcu ac tortor dignissim convallis aenean et tortor at risus. Faucibus in ornare quam viverra orci sagittis eu volutpat odio. Facilisis volutpat est velit egestas dui id. Viverra nibh cras pulvinar mattis nunc sed. Sed euismod nisi porta lorem. Netus et malesuada fames ac turpis egestas maecenas pharetra. Feugiat sed lectus vestibulum mattis ullamcorper. Feugiat scelerisque varius morbi enim nunc faucibus. Vulputate dignissim suspendisse in est ante in nibh mauris cursus. Mi quis hendrerit dolor magna. Id aliquet risus feugiat in ante. In fermentum et sollicitudin ac orci phasellus egestas tellus. Elementum nisi quis eleifend quam adipiscing. Tristique magna sit amet purus gravida quis blandit. Amet consectetur adipiscing elit duis tristique. Aliquet eget sit amet tellus cras adipiscing enim eu. Elementum nibh tellus molestie nunc non blandit.</p>
+                <p>Turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Iaculis at erat pellentesque adipiscing commodo elit at imperdiet dui. Senectus et netus et malesuada fames ac turpis. Consectetur lorem donec massa sapien faucibus et molestie. In eu mi bibendum neque egestas congue quisque egestas diam. Nibh nisl condimentum id venenatis a condimentum. Amet est placerat in egestas erat. Arcu non odio euismod lacinia. Lacus vel facilisis volutpat est velit egestas. Arcu non odio euismod lacinia at. Ullamcorper a lacus vestibulum sed. Sed blandit libero volutpat sed cras. Et odio pellentesque diam volutpat. Congue eu consequat ac felis donec et odio.</p>
+                <p>Curabitur vitae nunc sed velit dignissim sodales. Risus viverra adipiscing at in. Mauris ultrices eros in cursus turpis massa. Eget dolor morbi non arcu risus quis varius quam quisque. Nec tincidunt praesent semper feugiat nibh. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet enim. Luctus venenatis lectus magna fringilla urna. Feugiat pretium nibh ipsum consequat nisl vel pretium lectus quam. At augue eget arcu dictum. Quis eleifend quam adipiscing vitae proin sagittis nisl. Cras tincidunt lobortis feugiat vivamus at augue. Semper feugiat nibh sed pulvinar proin gravida. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Sed euismod nisi porta lorem mollis aliquam ut. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Felis bibendum ut tristique et. Condimentum lacinia quis vel eros donec.</p>
+              </div>
+              <div class="hidden xl:text-sm xl:block xl:w-1/4 xl:px-6">
+                <div class="flex flex-col justify-between overflow-y-auto sticky max-h-(screen-16) pt-12 pb-4 top-16">
+                  <ul class="mx-4">
+                    <li class="mb-2"><a href="#" class="block">Sidebar (right, first item)</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item</a></li>
+                    <li class="mb-2"><a href="#" class="block">Item (last)</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
