@@ -6,6 +6,8 @@ Render:
 
 * [`index-1.html`](http://htmlpreview.github.io/?https://github.com/spl/layout-sandbox/blob/main/index-1.html)
 * [`index-2.html`](http://htmlpreview.github.io/?https://github.com/spl/layout-sandbox/blob/main/index-2.html)
+* [`index-3.html`](http://htmlpreview.github.io/?https://github.com/spl/layout-sandbox/blob/main/index-3.html)
+* [`index-4.html`](http://htmlpreview.github.io/?https://github.com/spl/layout-sandbox/blob/main/index-4.html)
 
 ## Development
 
