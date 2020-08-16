@@ -4,6 +4,7 @@ The files `index-*.html` contain layout experiments using HTML and CSS.
 
 Render:
 
+* [`index-7.html`](http://htmlpreview.github.io/?https://github.com/spl/layout-sandbox/blob/main/index-7.html)
 * [`index-6.html`](http://htmlpreview.github.io/?https://github.com/spl/layout-sandbox/blob/main/index-6.html)
 * [`index-5.html`](http://htmlpreview.github.io/?https://github.com/spl/layout-sandbox/blob/main/index-5.html)
 * [`index-4.html`](http://htmlpreview.github.io/?https://github.com/spl/layout-sandbox/blob/main/index-4.html)
